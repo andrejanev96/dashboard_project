@@ -1,39 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>My Dashboard Project</title>
-</head>
-<body>
-<div class="dashboard-container">
-    <aside class="sidebar">
-        <!-- Logo / Title -->
-        <!-- Nav items -->
-    </aside>
-
-    <div class="main-content">
-        <header class="top-bar">
-            <!-- Greeting, search, profile, etc. -->
-        </header>
-
-        <div class="content-grid">
-            <section class="projects">
-                <!-- "Your Projects" cards -->
-            </section>
-
-            <aside class="announcements">
-                <!-- "Announcements" panel -->
-            </aside>
-
-            <aside class="trending">
-                <!-- "Trending" panel -->
-            </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard Layout</title>
+    <!-- Include any fonts (e.g., Roboto) or icons you’d like here -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="branding">
+          <h2><span class="material-icons"> android</span> Android</h2>
         </div>
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="material-icons"> person </span> Profile
+              </a>
+            </li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Communities</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="user-info">
+          <span class="user-name">Morgan Oakley</span>
+          <span class="user-handle">@morgan</span>
+        </div>
+        <div class="header-buttons">
+          <button>Notifications</button>
+          <button>Settings</button>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+        <!-- Projects Section -->
+        <section class="projects">
+          <h3>Your Projects</h3>
+          <div class="project-cards">
+            <article class="project-card">Super Cool Project</article>
+            <article class="project-card">Less Cool Project</article>
+            <article class="project-card">Impossible App</article>
+            <article class="project-card">Easy Peasy App</article>
+            <article class="project-card">Ad Blocker</article>
+            <article class="project-card">Money Maker</article>
+          </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section class="announcements">
+          <h3>Announcements</h3>
+          <ul>
+            <li>
+              <strong>Site Maintenance:</strong> Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <strong>Updated Privacy Policy:</strong> Lorem ipsum dolor sit.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="trending">
+          <h3>Trending</h3>
+          <ul>
+            <li>#webdev</li>
+            <li>@Project Name Builder</li>
+            <li>@kencid</li>
+            <li>@janed</li>
+            <li>#trafficMaker</li>
+          </ul>
+        </section>
+      </main>
     </div>
-</div>
-</body>
+  </body>
 </html>
